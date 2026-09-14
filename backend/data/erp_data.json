@@ -1,0 +1,1958 @@
+{
+  "projects": [
+    {
+      "project_id": "P001",
+      "name": "ЖК «Солнечный»",
+      "address": "г. Москва, ул. Солнечная, 4",
+      "planned_completion": "2026-10-10",
+      "actual_completion": "2026-09-17",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 49,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-07-12",
+          "planned_end": "2026-09-10",
+          "actual_end": "2026-09-23",
+          "status": "в процессе"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-09-25",
+          "planned_end": "2026-12-24",
+          "actual_end": "2026-12-31",
+          "status": "в процессе"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2027-01-09",
+          "planned_end": "2027-02-23",
+          "actual_end": "2027-02-25",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2027-02-27",
+          "planned_end": "2027-04-28",
+          "actual_end": "2027-04-25",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2027-05-05",
+          "planned_end": "2027-08-03",
+          "actual_end": "2027-07-22",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-07-29",
+          "planned_end": "2027-08-28",
+          "actual_end": "2027-09-10",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 107,
+          "produced": 73,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 77,
+          "produced": 59,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 52,
+          "produced": 53,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 23,
+          "unit": "т",
+          "daily_consumption": 5
+        },
+        "rebar": {
+          "available": 30,
+          "unit": "т",
+          "daily_consumption": 3
+        },
+        "bricks": {
+          "available": 18356,
+          "unit": "шт",
+          "daily_consumption": 264
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 19,
+          "area": 55.0,
+          "rooms": 1,
+          "base_price_per_sqm": 139729,
+          "price_per_sqm": 136934,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A002",
+          "floor": 14,
+          "area": 60.6,
+          "rooms": 2,
+          "base_price_per_sqm": 104110,
+          "price_per_sqm": 98904,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A003",
+          "floor": 3,
+          "area": 64.2,
+          "rooms": 3,
+          "base_price_per_sqm": 145541,
+          "price_per_sqm": 138263,
+          "discount_percent": 5,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 9,
+          "area": 102.6,
+          "rooms": 4,
+          "base_price_per_sqm": 125142,
+          "price_per_sqm": 123890,
+          "discount_percent": 1,
+          "status": "забронирована"
+        },
+        {
+          "id": "A005",
+          "floor": 3,
+          "area": 79.7,
+          "rooms": 3,
+          "base_price_per_sqm": 127837,
+          "price_per_sqm": 124001,
+          "discount_percent": 3,
+          "status": "продана"
+        },
+        {
+          "id": "A006",
+          "floor": 3,
+          "area": 34.1,
+          "rooms": 2,
+          "base_price_per_sqm": 140663,
+          "price_per_sqm": 135036,
+          "discount_percent": 4,
+          "status": "свободна"
+        },
+        {
+          "id": "A007",
+          "floor": 8,
+          "area": 108.0,
+          "rooms": 4,
+          "base_price_per_sqm": 108217,
+          "price_per_sqm": 100641,
+          "discount_percent": 7,
+          "status": "продана"
+        },
+        {
+          "id": "A008",
+          "floor": 12,
+          "area": 44.6,
+          "rooms": 3,
+          "base_price_per_sqm": 103730,
+          "price_per_sqm": 99580,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A009",
+          "floor": 3,
+          "area": 84.8,
+          "rooms": 2,
+          "base_price_per_sqm": 125005,
+          "price_per_sqm": 121254,
+          "discount_percent": 3,
+          "status": "свободна"
+        },
+        {
+          "id": "A010",
+          "floor": 15,
+          "area": 64.2,
+          "rooms": 2,
+          "base_price_per_sqm": 134866,
+          "price_per_sqm": 128122,
+          "discount_percent": 5,
+          "status": "свободна"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P002",
+      "name": "ЖК «Зелёный парк»",
+      "address": "г. Москва, ул. Парковая, 2",
+      "planned_completion": "2027-03-20",
+      "actual_completion": "2027-04-09",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 88,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-01-16",
+          "planned_end": "2026-03-17",
+          "actual_end": "2026-03-19",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-03-25",
+          "planned_end": "2026-06-23",
+          "actual_end": "2026-06-30",
+          "status": "завершён"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-07-04",
+          "planned_end": "2026-08-18",
+          "actual_end": "2026-08-15",
+          "status": "завершён"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-08-23",
+          "planned_end": "2026-10-22",
+          "actual_end": "2026-10-18",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2026-10-25",
+          "planned_end": "2027-01-23",
+          "actual_end": "2027-02-08",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-02-16",
+          "planned_end": "2027-03-18",
+          "actual_end": "2027-04-05",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 167,
+          "produced": 85,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 81,
+          "produced": 125,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 55,
+          "produced": 49,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 144,
+          "unit": "т",
+          "daily_consumption": 5
+        },
+        "rebar": {
+          "available": 59,
+          "unit": "т",
+          "daily_consumption": 3
+        },
+        "bricks": {
+          "available": 13587,
+          "unit": "шт",
+          "daily_consumption": 235
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 5,
+          "area": 75.9,
+          "rooms": 1,
+          "base_price_per_sqm": 139530,
+          "price_per_sqm": 139530,
+          "discount_percent": 0,
+          "status": "свободна"
+        },
+        {
+          "id": "A002",
+          "floor": 5,
+          "area": 86.5,
+          "rooms": 4,
+          "base_price_per_sqm": 129086,
+          "price_per_sqm": 127795,
+          "discount_percent": 1,
+          "status": "забронирована"
+        },
+        {
+          "id": "A003",
+          "floor": 13,
+          "area": 83.6,
+          "rooms": 4,
+          "base_price_per_sqm": 124676,
+          "price_per_sqm": 119688,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 1,
+          "area": 91.2,
+          "rooms": 1,
+          "base_price_per_sqm": 134676,
+          "price_per_sqm": 123901,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A005",
+          "floor": 11,
+          "area": 40.0,
+          "rooms": 4,
+          "base_price_per_sqm": 100365,
+          "price_per_sqm": 93339,
+          "discount_percent": 7,
+          "status": "свободна"
+        },
+        {
+          "id": "A006",
+          "floor": 9,
+          "area": 117.5,
+          "rooms": 2,
+          "base_price_per_sqm": 123271,
+          "price_per_sqm": 122038,
+          "discount_percent": 1,
+          "status": "продана"
+        },
+        {
+          "id": "A007",
+          "floor": 10,
+          "area": 105.8,
+          "rooms": 2,
+          "base_price_per_sqm": 100016,
+          "price_per_sqm": 95015,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A008",
+          "floor": 18,
+          "area": 115.8,
+          "rooms": 1,
+          "base_price_per_sqm": 129252,
+          "price_per_sqm": 122789,
+          "discount_percent": 5,
+          "status": "забронирована"
+        },
+        {
+          "id": "A009",
+          "floor": 1,
+          "area": 40.1,
+          "rooms": 3,
+          "base_price_per_sqm": 147587,
+          "price_per_sqm": 141683,
+          "discount_percent": 4,
+          "status": "свободна"
+        },
+        {
+          "id": "A010",
+          "floor": 2,
+          "area": 51.7,
+          "rooms": 1,
+          "base_price_per_sqm": 95613,
+          "price_per_sqm": 88920,
+          "discount_percent": 7,
+          "status": "свободна"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P003",
+      "name": "ЖК «Речной»",
+      "address": "г. Москва, наб. Речная, 5",
+      "planned_completion": "2028-03-19",
+      "actual_completion": "2028-02-20",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 72,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-07-11",
+          "planned_end": "2026-09-09",
+          "actual_end": "2026-09-20",
+          "status": "в процессе"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-09-30",
+          "planned_end": "2026-12-29",
+          "actual_end": "2027-01-18",
+          "status": "в процессе"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2027-01-25",
+          "planned_end": "2027-03-11",
+          "actual_end": "2027-03-23",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2027-03-27",
+          "planned_end": "2027-05-26",
+          "actual_end": "2027-05-21",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2027-05-30",
+          "planned_end": "2027-08-28",
+          "actual_end": "2027-08-24",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-08-28",
+          "planned_end": "2027-09-27",
+          "actual_end": "2027-10-03",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 202,
+          "produced": 221,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 133,
+          "produced": 77,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 48,
+          "produced": 48,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 241,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "rebar": {
+          "available": 36,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "bricks": {
+          "available": 2598,
+          "unit": "шт",
+          "daily_consumption": 223
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 18,
+          "area": 50.7,
+          "rooms": 2,
+          "base_price_per_sqm": 90471,
+          "price_per_sqm": 89566,
+          "discount_percent": 1,
+          "status": "продана"
+        },
+        {
+          "id": "A002",
+          "floor": 2,
+          "area": 50.6,
+          "rooms": 1,
+          "base_price_per_sqm": 146337,
+          "price_per_sqm": 139020,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A003",
+          "floor": 17,
+          "area": 51.4,
+          "rooms": 4,
+          "base_price_per_sqm": 104040,
+          "price_per_sqm": 95716,
+          "discount_percent": 8,
+          "status": "свободна"
+        },
+        {
+          "id": "A004",
+          "floor": 19,
+          "area": 81.9,
+          "rooms": 2,
+          "base_price_per_sqm": 141420,
+          "price_per_sqm": 131520,
+          "discount_percent": 7,
+          "status": "забронирована"
+        },
+        {
+          "id": "A005",
+          "floor": 7,
+          "area": 38.5,
+          "rooms": 4,
+          "base_price_per_sqm": 113219,
+          "price_per_sqm": 106425,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A006",
+          "floor": 15,
+          "area": 107.7,
+          "rooms": 1,
+          "base_price_per_sqm": 134129,
+          "price_per_sqm": 132787,
+          "discount_percent": 1,
+          "status": "свободна"
+        },
+        {
+          "id": "A007",
+          "floor": 13,
+          "area": 95.5,
+          "rooms": 1,
+          "base_price_per_sqm": 106295,
+          "price_per_sqm": 103106,
+          "discount_percent": 3,
+          "status": "свободна"
+        },
+        {
+          "id": "A008",
+          "floor": 18,
+          "area": 70.4,
+          "rooms": 4,
+          "base_price_per_sqm": 102025,
+          "price_per_sqm": 97944,
+          "discount_percent": 4,
+          "status": "забронирована"
+        },
+        {
+          "id": "A009",
+          "floor": 8,
+          "area": 108.7,
+          "rooms": 1,
+          "base_price_per_sqm": 119041,
+          "price_per_sqm": 109517,
+          "discount_percent": 8,
+          "status": "свободна"
+        },
+        {
+          "id": "A010",
+          "floor": 2,
+          "area": 88.7,
+          "rooms": 1,
+          "base_price_per_sqm": 96112,
+          "price_per_sqm": 93228,
+          "discount_percent": 3,
+          "status": "свободна"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P004",
+      "name": "ЖК «Центральный»",
+      "address": "г. Москва, ул. Ленина, 16",
+      "planned_completion": "2027-07-23",
+      "actual_completion": "2027-09-24",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 33,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-03-26",
+          "planned_end": "2026-05-25",
+          "actual_end": "2026-05-21",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-05-28",
+          "planned_end": "2026-08-26",
+          "actual_end": "2026-09-10",
+          "status": "в процессе"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-09-15",
+          "planned_end": "2026-10-30",
+          "actual_end": "2026-10-26",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-11-03",
+          "planned_end": "2027-01-02",
+          "actual_end": "2026-12-28",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2027-01-02",
+          "planned_end": "2027-04-02",
+          "actual_end": "2027-04-06",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-04-13",
+          "planned_end": "2027-05-13",
+          "actual_end": "2027-05-03",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 269,
+          "produced": 233,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 112,
+          "produced": 49,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 32,
+          "produced": 33,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 121,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "rebar": {
+          "available": 79,
+          "unit": "т",
+          "daily_consumption": 3
+        },
+        "bricks": {
+          "available": 18266,
+          "unit": "шт",
+          "daily_consumption": 81
+        }
+      },
+      "project_changes": [
+        {
+          "date": "2026-09-07",
+          "description": "Задержка поставки панелей на 2 недели",
+          "impact": "Срок сдачи сдвигается на 1 месяц"
+        }
+      ],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 19,
+          "area": 72.9,
+          "rooms": 2,
+          "base_price_per_sqm": 93727,
+          "price_per_sqm": 84354,
+          "discount_percent": 10,
+          "status": "свободна"
+        },
+        {
+          "id": "A002",
+          "floor": 6,
+          "area": 36.2,
+          "rooms": 1,
+          "base_price_per_sqm": 134250,
+          "price_per_sqm": 127537,
+          "discount_percent": 5,
+          "status": "забронирована"
+        },
+        {
+          "id": "A003",
+          "floor": 4,
+          "area": 114.7,
+          "rooms": 2,
+          "base_price_per_sqm": 127940,
+          "price_per_sqm": 125381,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 3,
+          "area": 67.7,
+          "rooms": 3,
+          "base_price_per_sqm": 107089,
+          "price_per_sqm": 101734,
+          "discount_percent": 5,
+          "status": "продана"
+        },
+        {
+          "id": "A005",
+          "floor": 11,
+          "area": 51.5,
+          "rooms": 4,
+          "base_price_per_sqm": 98577,
+          "price_per_sqm": 92662,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A006",
+          "floor": 11,
+          "area": 113.6,
+          "rooms": 1,
+          "base_price_per_sqm": 90610,
+          "price_per_sqm": 82455,
+          "discount_percent": 9,
+          "status": "продана"
+        },
+        {
+          "id": "A007",
+          "floor": 19,
+          "area": 119.6,
+          "rooms": 1,
+          "base_price_per_sqm": 125234,
+          "price_per_sqm": 118972,
+          "discount_percent": 5,
+          "status": "продана"
+        },
+        {
+          "id": "A008",
+          "floor": 9,
+          "area": 41.9,
+          "rooms": 3,
+          "base_price_per_sqm": 147728,
+          "price_per_sqm": 143296,
+          "discount_percent": 3,
+          "status": "свободна"
+        },
+        {
+          "id": "A009",
+          "floor": 12,
+          "area": 55.6,
+          "rooms": 4,
+          "base_price_per_sqm": 144640,
+          "price_per_sqm": 130176,
+          "discount_percent": 10,
+          "status": "продана"
+        },
+        {
+          "id": "A010",
+          "floor": 10,
+          "area": 85.1,
+          "rooms": 1,
+          "base_price_per_sqm": 133769,
+          "price_per_sqm": 120392,
+          "discount_percent": 10,
+          "status": "забронирована"
+        }
+      ],
+      "project_discount": 2
+    },
+    {
+      "project_id": "P005",
+      "name": "ЖК «Приморский»",
+      "address": "г. Москва, ул. Морская, 5",
+      "planned_completion": "2028-07-23",
+      "actual_completion": "2028-07-30",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 28,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-03-03",
+          "planned_end": "2026-05-02",
+          "actual_end": "2026-04-25",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-05-05",
+          "planned_end": "2026-08-03",
+          "actual_end": "2026-07-30",
+          "status": "завершён"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-08-03",
+          "planned_end": "2026-09-17",
+          "actual_end": "2026-09-29",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-10-05",
+          "planned_end": "2026-12-04",
+          "actual_end": "2026-11-28",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2026-12-02",
+          "planned_end": "2027-03-02",
+          "actual_end": "2027-02-27",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-03-04",
+          "planned_end": "2027-04-03",
+          "actual_end": "2027-04-02",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 225,
+          "produced": 114,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 56,
+          "produced": 41,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 60,
+          "produced": 42,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 151,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "rebar": {
+          "available": 5,
+          "unit": "т",
+          "daily_consumption": 2
+        },
+        "bricks": {
+          "available": 4786,
+          "unit": "шт",
+          "daily_consumption": 376
+        }
+      },
+      "project_changes": [
+        {
+          "date": "2026-09-07",
+          "description": "Изменение планировки этажа 3",
+          "impact": "Требуется пересчет бюджета"
+        }
+      ],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 15,
+          "area": 79.7,
+          "rooms": 4,
+          "base_price_per_sqm": 126759,
+          "price_per_sqm": 126759,
+          "discount_percent": 0,
+          "status": "свободна"
+        },
+        {
+          "id": "A002",
+          "floor": 3,
+          "area": 115.1,
+          "rooms": 2,
+          "base_price_per_sqm": 125755,
+          "price_per_sqm": 125755,
+          "discount_percent": 0,
+          "status": "забронирована"
+        },
+        {
+          "id": "A003",
+          "floor": 19,
+          "area": 79.7,
+          "rooms": 4,
+          "base_price_per_sqm": 98352,
+          "price_per_sqm": 98352,
+          "discount_percent": 0,
+          "status": "забронирована"
+        },
+        {
+          "id": "A004",
+          "floor": 12,
+          "area": 110.9,
+          "rooms": 1,
+          "base_price_per_sqm": 148911,
+          "price_per_sqm": 141465,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A005",
+          "floor": 8,
+          "area": 90.0,
+          "rooms": 3,
+          "base_price_per_sqm": 141125,
+          "price_per_sqm": 129835,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A006",
+          "floor": 20,
+          "area": 97.5,
+          "rooms": 2,
+          "base_price_per_sqm": 146662,
+          "price_per_sqm": 143728,
+          "discount_percent": 2,
+          "status": "свободна"
+        },
+        {
+          "id": "A007",
+          "floor": 14,
+          "area": 32.2,
+          "rooms": 3,
+          "base_price_per_sqm": 141274,
+          "price_per_sqm": 132797,
+          "discount_percent": 6,
+          "status": "продана"
+        },
+        {
+          "id": "A008",
+          "floor": 8,
+          "area": 54.0,
+          "rooms": 1,
+          "base_price_per_sqm": 115070,
+          "price_per_sqm": 115070,
+          "discount_percent": 0,
+          "status": "забронирована"
+        },
+        {
+          "id": "A009",
+          "floor": 8,
+          "area": 48.0,
+          "rooms": 4,
+          "base_price_per_sqm": 112915,
+          "price_per_sqm": 108398,
+          "discount_percent": 4,
+          "status": "свободна"
+        },
+        {
+          "id": "A010",
+          "floor": 8,
+          "area": 32.1,
+          "rooms": 2,
+          "base_price_per_sqm": 116113,
+          "price_per_sqm": 110307,
+          "discount_percent": 5,
+          "status": "забронирована"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P006",
+      "name": "ЖК «Академ»",
+      "address": "г. Москва, пр. Академический, 9",
+      "planned_completion": "2028-08-25",
+      "actual_completion": "2028-09-23",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 51,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2025-12-12",
+          "planned_end": "2026-02-10",
+          "actual_end": "2026-02-20",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-02-21",
+          "planned_end": "2026-05-22",
+          "actual_end": "2026-06-13",
+          "status": "завершён"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-06-15",
+          "planned_end": "2026-07-30",
+          "actual_end": "2026-08-06",
+          "status": "завершён"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-08-11",
+          "planned_end": "2026-10-10",
+          "actual_end": "2026-10-21",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2026-10-24",
+          "planned_end": "2027-01-22",
+          "actual_end": "2027-02-05",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-02-15",
+          "planned_end": "2027-03-17",
+          "actual_end": "2027-03-17",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 109,
+          "produced": 77,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 126,
+          "produced": 85,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 42,
+          "produced": 35,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 233,
+          "unit": "т",
+          "daily_consumption": 5
+        },
+        "rebar": {
+          "available": 70,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "bricks": {
+          "available": 13122,
+          "unit": "шт",
+          "daily_consumption": 345
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 2,
+          "area": 93.8,
+          "rooms": 1,
+          "base_price_per_sqm": 124073,
+          "price_per_sqm": 114147,
+          "discount_percent": 8,
+          "status": "продана"
+        },
+        {
+          "id": "A002",
+          "floor": 7,
+          "area": 62.8,
+          "rooms": 1,
+          "base_price_per_sqm": 133531,
+          "price_per_sqm": 126854,
+          "discount_percent": 5,
+          "status": "продана"
+        },
+        {
+          "id": "A003",
+          "floor": 11,
+          "area": 89.7,
+          "rooms": 1,
+          "base_price_per_sqm": 137169,
+          "price_per_sqm": 131682,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 10,
+          "area": 90.0,
+          "rooms": 3,
+          "base_price_per_sqm": 116371,
+          "price_per_sqm": 111716,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A005",
+          "floor": 5,
+          "area": 47.3,
+          "rooms": 4,
+          "base_price_per_sqm": 134388,
+          "price_per_sqm": 131700,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A006",
+          "floor": 19,
+          "area": 57.1,
+          "rooms": 1,
+          "base_price_per_sqm": 109914,
+          "price_per_sqm": 105517,
+          "discount_percent": 4,
+          "status": "свободна"
+        },
+        {
+          "id": "A007",
+          "floor": 14,
+          "area": 100.7,
+          "rooms": 3,
+          "base_price_per_sqm": 120473,
+          "price_per_sqm": 112039,
+          "discount_percent": 7,
+          "status": "забронирована"
+        },
+        {
+          "id": "A008",
+          "floor": 7,
+          "area": 76.0,
+          "rooms": 2,
+          "base_price_per_sqm": 133178,
+          "price_per_sqm": 131846,
+          "discount_percent": 1,
+          "status": "забронирована"
+        },
+        {
+          "id": "A009",
+          "floor": 17,
+          "area": 89.7,
+          "rooms": 3,
+          "base_price_per_sqm": 96120,
+          "price_per_sqm": 93236,
+          "discount_percent": 3,
+          "status": "продана"
+        },
+        {
+          "id": "A010",
+          "floor": 10,
+          "area": 50.2,
+          "rooms": 2,
+          "base_price_per_sqm": 99656,
+          "price_per_sqm": 99656,
+          "discount_percent": 0,
+          "status": "свободна"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P007",
+      "name": "ЖК «Лесной»",
+      "address": "г. Москва, ул. Лесная, 16",
+      "planned_completion": "2027-07-08",
+      "actual_completion": "2027-05-27",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 75,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-01-24",
+          "planned_end": "2026-03-25",
+          "actual_end": "2026-03-29",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-04-05",
+          "planned_end": "2026-07-04",
+          "actual_end": "2026-07-20",
+          "status": "завершён"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-07-28",
+          "planned_end": "2026-09-11",
+          "actual_end": "2026-09-26",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-10-03",
+          "planned_end": "2026-12-02",
+          "actual_end": "2026-12-10",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2026-12-14",
+          "planned_end": "2027-03-14",
+          "actual_end": "2027-03-06",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-03-09",
+          "planned_end": "2027-04-08",
+          "actual_end": "2027-04-20",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 292,
+          "produced": 247,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 63,
+          "produced": 129,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 47,
+          "produced": 29,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 100,
+          "unit": "т",
+          "daily_consumption": 5
+        },
+        "rebar": {
+          "available": 64,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "bricks": {
+          "available": 18765,
+          "unit": "шт",
+          "daily_consumption": 177
+        }
+      },
+      "project_changes": [
+        {
+          "date": "2026-09-07",
+          "description": "Задержка поставки панелей на 2 недели",
+          "impact": "Без изменения сроков"
+        }
+      ],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 5,
+          "area": 102.1,
+          "rooms": 3,
+          "base_price_per_sqm": 139496,
+          "price_per_sqm": 129731,
+          "discount_percent": 7,
+          "status": "продана"
+        },
+        {
+          "id": "A002",
+          "floor": 17,
+          "area": 68.4,
+          "rooms": 4,
+          "base_price_per_sqm": 148799,
+          "price_per_sqm": 145823,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A003",
+          "floor": 16,
+          "area": 70.5,
+          "rooms": 2,
+          "base_price_per_sqm": 145041,
+          "price_per_sqm": 139239,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 16,
+          "area": 86.4,
+          "rooms": 3,
+          "base_price_per_sqm": 118827,
+          "price_per_sqm": 117638,
+          "discount_percent": 1,
+          "status": "продана"
+        },
+        {
+          "id": "A005",
+          "floor": 10,
+          "area": 51.1,
+          "rooms": 3,
+          "base_price_per_sqm": 110952,
+          "price_per_sqm": 102075,
+          "discount_percent": 8,
+          "status": "свободна"
+        },
+        {
+          "id": "A006",
+          "floor": 5,
+          "area": 43.6,
+          "rooms": 4,
+          "base_price_per_sqm": 135478,
+          "price_per_sqm": 132768,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A007",
+          "floor": 7,
+          "area": 35.8,
+          "rooms": 4,
+          "base_price_per_sqm": 111684,
+          "price_per_sqm": 102749,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A008",
+          "floor": 14,
+          "area": 35.6,
+          "rooms": 4,
+          "base_price_per_sqm": 115524,
+          "price_per_sqm": 115524,
+          "discount_percent": 0,
+          "status": "продана"
+        },
+        {
+          "id": "A009",
+          "floor": 13,
+          "area": 72.9,
+          "rooms": 3,
+          "base_price_per_sqm": 109569,
+          "price_per_sqm": 102994,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A010",
+          "floor": 18,
+          "area": 97.3,
+          "rooms": 2,
+          "base_price_per_sqm": 121996,
+          "price_per_sqm": 118336,
+          "discount_percent": 3,
+          "status": "забронирована"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P008",
+      "name": "ЖК «Озерный»",
+      "address": "г. Москва, ул. Озерная, 16",
+      "planned_completion": "2027-04-20",
+      "actual_completion": "2027-02-26",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 33,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-01-16",
+          "planned_end": "2026-03-17",
+          "actual_end": "2026-03-19",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-03-27",
+          "planned_end": "2026-06-25",
+          "actual_end": "2026-07-06",
+          "status": "завершён"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-07-09",
+          "planned_end": "2026-08-23",
+          "actual_end": "2026-08-30",
+          "status": "завершён"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2026-09-09",
+          "planned_end": "2026-11-08",
+          "actual_end": "2026-11-21",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2026-11-30",
+          "planned_end": "2027-02-28",
+          "actual_end": "2027-02-18",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-02-19",
+          "planned_end": "2027-03-21",
+          "actual_end": "2027-04-06",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 251,
+          "produced": 194,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 134,
+          "produced": 33,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 25,
+          "produced": 42,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 79,
+          "unit": "т",
+          "daily_consumption": 4
+        },
+        "rebar": {
+          "available": 28,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "bricks": {
+          "available": 9024,
+          "unit": "шт",
+          "daily_consumption": 244
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 15,
+          "area": 59.4,
+          "rooms": 4,
+          "base_price_per_sqm": 108235,
+          "price_per_sqm": 101740,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A002",
+          "floor": 3,
+          "area": 72.3,
+          "rooms": 1,
+          "base_price_per_sqm": 112935,
+          "price_per_sqm": 109546,
+          "discount_percent": 3,
+          "status": "продана"
+        },
+        {
+          "id": "A003",
+          "floor": 3,
+          "area": 100.3,
+          "rooms": 1,
+          "base_price_per_sqm": 139429,
+          "price_per_sqm": 139429,
+          "discount_percent": 0,
+          "status": "свободна"
+        },
+        {
+          "id": "A004",
+          "floor": 7,
+          "area": 105.5,
+          "rooms": 2,
+          "base_price_per_sqm": 105633,
+          "price_per_sqm": 103520,
+          "discount_percent": 2,
+          "status": "забронирована"
+        },
+        {
+          "id": "A005",
+          "floor": 4,
+          "area": 80.8,
+          "rooms": 2,
+          "base_price_per_sqm": 120476,
+          "price_per_sqm": 115656,
+          "discount_percent": 4,
+          "status": "забронирована"
+        },
+        {
+          "id": "A006",
+          "floor": 6,
+          "area": 84.5,
+          "rooms": 1,
+          "base_price_per_sqm": 140973,
+          "price_per_sqm": 138153,
+          "discount_percent": 2,
+          "status": "забронирована"
+        },
+        {
+          "id": "A007",
+          "floor": 4,
+          "area": 82.1,
+          "rooms": 3,
+          "base_price_per_sqm": 127735,
+          "price_per_sqm": 120070,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A008",
+          "floor": 7,
+          "area": 36.8,
+          "rooms": 2,
+          "base_price_per_sqm": 96678,
+          "price_per_sqm": 92810,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A009",
+          "floor": 20,
+          "area": 102.5,
+          "rooms": 1,
+          "base_price_per_sqm": 112754,
+          "price_per_sqm": 103733,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A010",
+          "floor": 12,
+          "area": 36.2,
+          "rooms": 3,
+          "base_price_per_sqm": 90829,
+          "price_per_sqm": 85379,
+          "discount_percent": 6,
+          "status": "забронирована"
+        }
+      ],
+      "project_discount": 0
+    },
+    {
+      "project_id": "P009",
+      "name": "ЖК «Парковый»",
+      "address": "г. Москва, ул. Садовая, 14",
+      "planned_completion": "2028-06-09",
+      "actual_completion": "2028-07-11",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 56,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-08-16",
+          "planned_end": "2026-10-15",
+          "actual_end": "2026-10-25",
+          "status": "в процессе"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-11-03",
+          "planned_end": "2027-02-01",
+          "actual_end": "2027-02-20",
+          "status": "в процессе"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2027-02-25",
+          "planned_end": "2027-04-11",
+          "actual_end": "2027-04-10",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2027-04-20",
+          "planned_end": "2027-06-19",
+          "actual_end": "2027-06-22",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2027-07-01",
+          "planned_end": "2027-09-29",
+          "actual_end": "2027-09-20",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-09-28",
+          "planned_end": "2027-10-28",
+          "actual_end": "2027-11-10",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 211,
+          "produced": 237,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 125,
+          "produced": 64,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 40,
+          "produced": 30,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 54,
+          "unit": "т",
+          "daily_consumption": 3
+        },
+        "rebar": {
+          "available": 62,
+          "unit": "т",
+          "daily_consumption": 1
+        },
+        "bricks": {
+          "available": 15727,
+          "unit": "шт",
+          "daily_consumption": 341
+        }
+      },
+      "project_changes": [
+        {
+          "date": "2026-09-07",
+          "description": "Увеличение площади остекления",
+          "impact": "Без изменения сроков"
+        }
+      ],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 1,
+          "area": 74.5,
+          "rooms": 3,
+          "base_price_per_sqm": 101917,
+          "price_per_sqm": 93763,
+          "discount_percent": 8,
+          "status": "свободна"
+        },
+        {
+          "id": "A002",
+          "floor": 12,
+          "area": 101.8,
+          "rooms": 3,
+          "base_price_per_sqm": 108327,
+          "price_per_sqm": 102910,
+          "discount_percent": 5,
+          "status": "продана"
+        },
+        {
+          "id": "A003",
+          "floor": 1,
+          "area": 76.5,
+          "rooms": 2,
+          "base_price_per_sqm": 95610,
+          "price_per_sqm": 91785,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A004",
+          "floor": 14,
+          "area": 74.0,
+          "rooms": 2,
+          "base_price_per_sqm": 135259,
+          "price_per_sqm": 124438,
+          "discount_percent": 8,
+          "status": "продана"
+        },
+        {
+          "id": "A005",
+          "floor": 16,
+          "area": 70.3,
+          "rooms": 1,
+          "base_price_per_sqm": 96098,
+          "price_per_sqm": 91293,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A006",
+          "floor": 13,
+          "area": 92.3,
+          "rooms": 3,
+          "base_price_per_sqm": 133513,
+          "price_per_sqm": 125502,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A007",
+          "floor": 18,
+          "area": 77.8,
+          "rooms": 4,
+          "base_price_per_sqm": 138885,
+          "price_per_sqm": 126385,
+          "discount_percent": 9,
+          "status": "забронирована"
+        },
+        {
+          "id": "A008",
+          "floor": 12,
+          "area": 93.3,
+          "rooms": 3,
+          "base_price_per_sqm": 110094,
+          "price_per_sqm": 104589,
+          "discount_percent": 5,
+          "status": "свободна"
+        },
+        {
+          "id": "A009",
+          "floor": 4,
+          "area": 94.9,
+          "rooms": 3,
+          "base_price_per_sqm": 97835,
+          "price_per_sqm": 89029,
+          "discount_percent": 9,
+          "status": "продана"
+        },
+        {
+          "id": "A010",
+          "floor": 6,
+          "area": 47.2,
+          "rooms": 4,
+          "base_price_per_sqm": 108120,
+          "price_per_sqm": 98389,
+          "discount_percent": 9,
+          "status": "продана"
+        }
+      ],
+      "project_discount": 1
+    },
+    {
+      "project_id": "P010",
+      "name": "ЖК «Спортивный»",
+      "address": "г. Москва, ул. Спортивная, 4",
+      "planned_completion": "2027-10-03",
+      "actual_completion": "2027-09-22",
+      "construction_stage": "Благоустройство",
+      "progress_percent": 95,
+      "stage_schedule": [
+        {
+          "name": "Фундамент",
+          "planned_start": "2026-06-29",
+          "planned_end": "2026-08-28",
+          "actual_end": "2026-08-27",
+          "status": "завершён"
+        },
+        {
+          "name": "Стены и перекрытия",
+          "planned_start": "2026-09-05",
+          "planned_end": "2026-12-04",
+          "actual_end": "2026-12-08",
+          "status": "в процессе"
+        },
+        {
+          "name": "Кровля",
+          "planned_start": "2026-12-11",
+          "planned_end": "2027-01-25",
+          "actual_end": "2027-01-31",
+          "status": "в процессе"
+        },
+        {
+          "name": "Инженерные системы",
+          "planned_start": "2027-02-05",
+          "planned_end": "2027-04-06",
+          "actual_end": "2027-04-01",
+          "status": "в процессе"
+        },
+        {
+          "name": "Отделка",
+          "planned_start": "2027-04-02",
+          "planned_end": "2027-07-01",
+          "actual_end": "2027-06-30",
+          "status": "запланирован"
+        },
+        {
+          "name": "Благоустройство",
+          "planned_start": "2027-07-01",
+          "planned_end": "2027-07-31",
+          "actual_end": "2027-07-21",
+          "status": "запланирован"
+        }
+      ],
+      "zbi_schedule": {
+        "wall_panels": {
+          "planned": 174,
+          "produced": 228,
+          "unit": "шт"
+        },
+        "floor_slabs": {
+          "planned": 66,
+          "produced": 111,
+          "unit": "шт"
+        },
+        "stair_flights": {
+          "planned": 51,
+          "produced": 21,
+          "unit": "шт"
+        }
+      },
+      "materials": {
+        "cement": {
+          "available": 16,
+          "unit": "т",
+          "daily_consumption": 5
+        },
+        "rebar": {
+          "available": 41,
+          "unit": "т",
+          "daily_consumption": 2
+        },
+        "bricks": {
+          "available": 16186,
+          "unit": "шт",
+          "daily_consumption": 275
+        }
+      },
+      "project_changes": [],
+      "available_apartments": [
+        {
+          "id": "A001",
+          "floor": 2,
+          "area": 52.7,
+          "rooms": 4,
+          "base_price_per_sqm": 97476,
+          "price_per_sqm": 96501,
+          "discount_percent": 1,
+          "status": "забронирована"
+        },
+        {
+          "id": "A002",
+          "floor": 16,
+          "area": 36.7,
+          "rooms": 1,
+          "base_price_per_sqm": 99943,
+          "price_per_sqm": 97944,
+          "discount_percent": 2,
+          "status": "продана"
+        },
+        {
+          "id": "A003",
+          "floor": 10,
+          "area": 37.7,
+          "rooms": 2,
+          "base_price_per_sqm": 97762,
+          "price_per_sqm": 89941,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A004",
+          "floor": 20,
+          "area": 83.7,
+          "rooms": 2,
+          "base_price_per_sqm": 140835,
+          "price_per_sqm": 129568,
+          "discount_percent": 8,
+          "status": "забронирована"
+        },
+        {
+          "id": "A005",
+          "floor": 15,
+          "area": 111.8,
+          "rooms": 3,
+          "base_price_per_sqm": 146371,
+          "price_per_sqm": 137588,
+          "discount_percent": 6,
+          "status": "забронирована"
+        },
+        {
+          "id": "A006",
+          "floor": 19,
+          "area": 85.9,
+          "rooms": 1,
+          "base_price_per_sqm": 139986,
+          "price_per_sqm": 135786,
+          "discount_percent": 3,
+          "status": "продана"
+        },
+        {
+          "id": "A007",
+          "floor": 7,
+          "area": 53.8,
+          "rooms": 1,
+          "base_price_per_sqm": 100292,
+          "price_per_sqm": 97283,
+          "discount_percent": 3,
+          "status": "свободна"
+        },
+        {
+          "id": "A008",
+          "floor": 18,
+          "area": 36.8,
+          "rooms": 1,
+          "base_price_per_sqm": 116772,
+          "price_per_sqm": 108597,
+          "discount_percent": 7,
+          "status": "продана"
+        },
+        {
+          "id": "A009",
+          "floor": 20,
+          "area": 72.3,
+          "rooms": 1,
+          "base_price_per_sqm": 105170,
+          "price_per_sqm": 100963,
+          "discount_percent": 4,
+          "status": "продана"
+        },
+        {
+          "id": "A010",
+          "floor": 10,
+          "area": 93.3,
+          "rooms": 4,
+          "base_price_per_sqm": 94664,
+          "price_per_sqm": 91824,
+          "discount_percent": 3,
+          "status": "забронирована"
+        }
+      ],
+      "project_discount": 0
+    }
+  ],
+  "competitors": [
+    {
+      "name": "ЖК «Зелёный»",
+      "price_per_sqm": 108000,
+      "distance": "500 м",
+      "completion": "2026-11-01"
+    },
+    {
+      "name": "ЖК «Парковый»",
+      "price_per_sqm": 112000,
+      "distance": "1 км",
+      "completion": "2027-03-01"
+    },
+    {
+      "name": "ЖК «Речной»",
+      "price_per_sqm": 125000,
+      "distance": "2 км",
+      "completion": "2026-12-15"
+    }
+  ]
+}

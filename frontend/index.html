@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7f8">
+  <meta name="description" content="Рабочее пространство отдела продаж ГК ДСК. Контроль строительства, подбор квартир и персональные коммерческие предложения.">
+  <title>ДСК · Пространство продаж</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <script>
+    (() => {
+      const banners={overview:'overview',apartments:'apartments',cabinet:'apartments',construction:'construction',proposals:'proposals',approvals:'approvals',analytics:'analytics'};
+      const requested=new Set();
+      function preload(file,priority='high') {
+        if(requested.has(file))return;requested.add(file);
+        const link=document.createElement('link');link.rel='preload';link.as='image';link.href='./'+file;link.fetchPriority=priority;document.head.append(link);
+      }
+      function warm(route,priority='high') {
+        const kind=banners[route];if(kind)preload('banner-'+kind+'-v1.webp',priority);
+        if(route==='apartments'||route==='cabinet') ['one','two','three'].forEach(room=>preload('apartment-'+room+'-room-card-v1.webp',priority));
+      }
+      warm(location.hash.slice(1).split('?')[0]||'overview');
+      addEventListener('hashchange',()=>warm(location.hash.slice(1).split('?')[0]));
+      ['pointerover','focusin','touchstart'].forEach(event=>document.addEventListener(event,e=>{
+        const page=e.target.closest?.('a[data-page]')?.dataset.page;if(page)warm(page,'low');
+      },{passive:true}));
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=2.42">
+  <link rel="stylesheet" href="./interface.css?v=2.42">
+  <link rel="stylesheet" href="./motion.css?v=2.42">
+  <link rel="stylesheet" href="./orange-system.css?v=2.42">
+  <link rel="stylesheet" href="./buttons.css?v=2.42">
+  <link rel="stylesheet" href="./readability.css?v=2.42">
+  <link rel="stylesheet" href="./layout.css?v=2.42">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="auth-locked">
+  <section class="auth-screen" id="auth-screen" aria-labelledby="auth-title">
+    <div class="auth-shell">
+      <div class="auth-form-panel">
+        <div class="auth-content-stack">
+        <a class="auth-brand" href="#overview" aria-label="ДСК — пространство продаж"><span class="brand-mark">дск<span></span></span><span>Пространство продаж</span></a>
+        <div class="auth-intro">
+          <h1 id="auth-title">Войти в пространство продаж</h1>
+          <p>Управляйте клиентами, предложениями и ожиданиями на основе фактического хода строительства.</p>
+        </div>
+        <form class="auth-form" id="login-form" novalidate>
+          <label for="login-email">Рабочая почта</label>
+          <div class="auth-field"><span data-icon="mail"></span><input id="login-email" name="email" type="email" value="user1@gmail.com" placeholder="user1@gmail.com" autocomplete="username" required></div>
+          <label for="login-password">Пароль</label>
+          <div class="auth-field"><span data-icon="lock"></span><input id="login-password" name="password" type="password" value="demo" placeholder="Введите пароль" autocomplete="current-password" required><button type="button" data-action="toggle-password" aria-controls="login-password" aria-pressed="false">Показать</button></div>
+          <button class="auth-submit" type="submit">Войти в пространство <span aria-hidden="true">→</span></button>
+          <button class="auth-demo" type="button" data-action="demo-login"><span class="status-dot"></span> Быстрый вход в демо</button>
+        </form>
+        <div class="auth-security"><span data-icon="shield"></span><p><strong>Безопасный демонстрационный вход</strong><br>Реальные ERP, CRM и отправка сообщений не подключены.</p></div>
+        <p class="auth-legal">ГК «ДСК» · внутреннее рабочее пространство</p>
+        </div>
+      </div>
+      <div class="auth-visual" aria-label="Единый контур данных строительства и продаж">
+        <canvas class="auth-matrix" data-matrix="auth" aria-hidden="true"></canvas>
+        <div class="auth-visual-tags"><span>ERP · стройка</span><span>CRM · продажи</span></div>
+        <div class="auth-visual-card">
+          <h2>От статуса стройки — к следующему шагу клиента</h2>
+          <p>Сроки, остатки, скидки и коммуникации собраны в одном контексте.</p>
+          <div class="auth-card-stats"><span><strong>3</strong> объекта</span><span><strong>147</strong> квартир</span><span><strong>5</strong> клиентов</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="#main" class="skip-link">Перейти к содержимому</a>
+  <aside class="sidebar" id="sidebar" inert aria-hidden="true">
+    <button class="icon-button sidebar-close" data-action="close-menu" aria-label="Закрыть меню"><span data-icon="x"></span></button>
+    <a class="brand" href="#overview" aria-label="ДСК — главная"><span class="brand-mark">дск<span></span></span><span class="brand-caption">пространство<br>продаж</span></a>
+    <div class="workspace"><span class="workspace-icon" data-icon="building"></span><div><strong>ГК «ДСК»</strong><small id="workspace-subtitle">Отдел продаж</small></div><span data-icon="chevrons"></span></div>
+    <div class="nav-label">Разделы</div>
+    <nav aria-label="Основная навигация">
+      <a href="#cabinet" data-page="cabinet" class="client-only-nav"><span data-icon="home"></span>Главная</a>
+      <a href="#overview" data-page="overview" class="staff-only-nav"><span data-icon="dashboard"></span>Обзор</a>
+      <a href="#clients" data-page="clients" class="staff-only-nav"><span data-icon="users"></span>Клиенты<span class="nav-count" id="client-count">5</span></a>
+      <a href="#apartments" data-page="apartments"><span data-icon="grid"></span>Квартиры</a>
+      <a href="#proposals" data-page="proposals" class="staff-only-nav"><span data-icon="file"></span>Предложения</a>
+      <a href="#construction" data-page="construction" class="staff-only-nav"><span data-icon="building"></span>Строительство</a>
+      <a href="#analytics" data-page="analytics" class="staff-only-nav"><span data-icon="message"></span>Демонстрационный раздел</a>
+      <a href="#my-offers" data-page="my-offers" class="client-only-nav"><span data-icon="file"></span>Мои предложения</a>
+      <a href="#support" data-page="support" class="client-only-nav"><span data-icon="help"></span>Поддержка</a>
+    </nav>
+    <div class="nav-divider staff-only-nav"></div><div class="nav-label staff-only-nav">Настройки</div>
+    <nav aria-label="Управление" class="staff-only-nav"><a href="#approvals" data-page="approvals"><span data-icon="shield"></span>Согласования<span class="nav-count orange" id="approval-count">3</span></a></nav>
+    <div class="sidebar-bottom">
+      <div class="connection-card staff-only-nav"><span class="connection-symbol" data-icon="database"></span><strong>Данные под рукой</strong><p>Строительство и продажи<br>в одном пространстве</p><div><span class="status-dot"></span>Демо-среда ERP</div></div>
+      <button class="sidebar-action staff-only-nav" data-action="settings"><span data-icon="settings"></span>Настройки</button>
+      <button class="sidebar-action staff-only-nav" data-action="help"><span data-icon="help"></span>Помощь</button>
+      <div class="sidebar-footer"><span>ДСК SALES</span><span>v.2.41</span></div>
+    </div>
+  </aside>
+  <div class="sidebar-scrim" data-action="close-menu"></div>
+  <div class="app" inert aria-hidden="true">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" data-action="menu" aria-label="Открыть меню" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button>
+      <div class="breadcrumb"><span>Рабочее пространство</span><span class="slash">/</span><strong id="breadcrumb-current">Обзор</strong></div>
+      <div class="topbar-right"><button class="assistant-launch" id="assistant-panel-trigger" type="button" data-action="assistant-panel-toggle" aria-controls="assistant-panel" aria-expanded="false"><span>Помощник</span></button><button class="search-trigger staff-only-nav" data-action="search"><span data-icon="search"></span><span>Найти клиента, квартиру…</span><kbd>⌘ K</kbd></button><span class="demo-label">Демо-данные</span><button class="icon-button notification-button" data-action="notifications" aria-label="Уведомления"><span data-icon="bell"></span><i hidden></i></button><span class="topbar-divider"></span><button class="profile" data-action="profile" aria-label="Профиль Анны Морозовой"><span class="avatar">АМ</span><span class="profile-text"><strong>Анна Морозова</strong><small>Менеджер по продажам</small></span><span data-icon="chevron-down"></span></button></div>
+    </header>
+    <main id="main" tabindex="-1" aria-busy="true"><div class="boot-state"><span class="boot-symbol" data-icon="building"></span><h1>Собираем ваше пространство.</h1><p>Загружаем клиентов, объекты и условия продаж…</p></div></main>
+    <footer class="main-footer"><span>© 2026 ГК «ДСК»</span><span><span class="status-dot"></span>Демонстрационные данные · 5 сентября, 10:42</span></footer>
+    <div class="assistant-panel-scrim" id="assistant-panel-scrim" data-action="assistant-panel-close" hidden></div>
+    <aside class="assistant-panel" id="assistant-panel" role="dialog" aria-modal="true" aria-labelledby="assistant-panel-title" hidden>
+      <header class="assistant-panel-header">
+        <div><h2 id="assistant-panel-title">Помощник по продажам</h2><p>Квартиры, клиенты, сроки и скидки</p></div>
+        <button class="assistant-panel-close" type="button" data-action="assistant-panel-close" aria-label="Закрыть помощника"><span data-icon="x"></span></button>
+      </header>
+      <div class="assistant-panel-user" aria-label="Текущий пользователь">
+        <span class="avatar" id="assistant-user-avatar">АМ</span>
+        <div><small>Вы вошли как</small><strong id="assistant-user-name">Анна Морозова</strong><span id="assistant-user-role">Менеджер по продажам</span></div>
+        <b>Вы</b>
+      </div>
+      <label class="assistant-panel-context" for="assistant-panel-client">
+        <span>Контекст</span>
+        <select id="assistant-panel-client" name="clientId" aria-label="Контекст клиента"><option value="">Весь отдел</option></select>
+      </label>
+      <div class="assistant-chat-log" id="assistant-chat-log" role="log" aria-live="polite" aria-relevant="additions">
+        <div class="assistant-message assistant-message-system">
+          <span>Помощник</span>
+          <p>Сверю вопрос с текущими данными по строительству, клиентам и финансовой модели.</p>
+        </div>
+      </div>
+      <div class="assistant-quick-questions" aria-label="Быстрые вопросы">
+        <button type="button" data-action="assistant-panel-quick" data-question="Что сегодня требует внимания?">Приоритеты на сегодня</button>
+        <button type="button" data-action="assistant-panel-quick" data-question="Какие лимиты скидок?">Лимиты скидок</button>
+        <button type="button" data-action="assistant-panel-quick" data-question="Какие сроки передачи ключей?">Сроки ключей</button>
+      </div>
+      <form class="assistant-panel-composer" id="assistant-panel-form">
+        <label class="sr-only" for="assistant-chat-input">Вопрос помощнику</label>
+        <textarea id="assistant-chat-input" name="question" rows="2" maxlength="500" placeholder="Спросите о квартире, клиенте или сроках…" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <p class="assistant-panel-note">Ответы основаны на текущих данных ERP, CRM и GigaChat.</p>
+    </aside>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div class="toast-region" id="toasts" aria-live="polite"></div>
+  <div class="sr-only" id="route-announcement" role="status"></div>
+  <noscript><div class="noscript-message">Для работы с клиентами и предложениями включите JavaScript в браузере.</div></noscript>
+  <script src="./data.js?v=2.42"></script>
+  <script src="./api.js?v=2.42"></script>
+  <script src="./icons.js?v=2.42"></script>
+  <script src="./motion.js?v=2.42"></script>
+  <script src="./matrix.js?v=2.42"></script>
+  <script src="./controls.js?v=2.42"></script>
+  <script src="./exports.js?v=2.42"></script>
+  <script src="./app.js?v=2.42"></script>
+  <script src="./views.js?v=2.42"></script>
+  <script src="./panels.js?v=2.42"></script>
+  <script src="./roles.js?v=2.42"></script>
+  <script src="./chat_bridge.js?v=2.42"></script>
+  <script src="./notifications_bridge.js?v=2.42"></script>
+</body>
+</html>

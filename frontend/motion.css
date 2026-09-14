@@ -1,0 +1,25 @@
+/* Motion is feedback: never a prerequisite for reading or completing a task. */
+.air-text{perspective:800px}
+.air-word{display:inline-block;max-width:100%;white-space:normal}
+.air-letter{display:inline-block;transform-origin:50% 80%;backface-visibility:hidden}
+.chart-svg .bar,.chart-svg .previous-bar{transform-box:fill-box;transform-origin:center bottom}
+.progress-track>span{transform-origin:left center}
+button,a{transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease}
+.icon,.icon *{animation:none!important;transition:none!important;transform:none!important}
+.card,.apartment-card,.project-detail-card,.approval-card{transition:border-color 180ms ease,box-shadow 180ms ease}
+
+/* Control interaction states are defined centrally in buttons.css. */
+
+
+
+[data-motion=on] .segmented>button{transform:none!important}
+.toast{animation:toast-arrive 350ms cubic-bezier(.16,1,.3,1) both}
+.modal-step{animation:step-arrive 280ms cubic-bezier(.16,1,.3,1) both}
+@keyframes toast-arrive{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes step-arrive{from{opacity:.3;transform:translateX(7px)}to{opacity:1;transform:translateX(0)}}
+[data-motion=off] *,[data-motion=off] *:before,[data-motion=off] *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .air-letter{opacity:1!important;filter:none!important;transform:none!important}
+}
+@media print{.air-letter{opacity:1!important;filter:none!important;transform:none!important}}

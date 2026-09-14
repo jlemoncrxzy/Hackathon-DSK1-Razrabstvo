@@ -1,0 +1,102 @@
+/* One visual state system for action buttons. Layout belongs to the component. */
+:root{
+  --surface-hover:#fff6ee;
+  --surface-shadow:0 6px 20px #7036110d;
+  --surface-hover-shadow:0 8px 24px #7036111a;
+  --button-duration:180ms;
+  --button-ease:cubic-bezier(.2,0,0,1);
+  --button-focus:#9f390f;
+}
+.ui-button,.button{
+  --button-fill:#272321;
+  --button-hover:#151312;
+  --button-pressed:#050505;
+  --button-ink:#fff;
+  --button-line:#272321;
+  --button-hover-line:#151312;
+  background-color:var(--button-fill)!important;
+  background-image:none!important;
+  color:var(--button-ink)!important;
+  border:1px solid var(--button-line)!important;
+  box-shadow:none!important;
+  transform:none!important;
+  filter:none!important;
+  opacity:1!important;
+  cursor:pointer;
+  transition:background-color var(--button-duration) var(--button-ease),border-color var(--button-duration) var(--button-ease),color var(--button-duration) var(--button-ease)!important;
+  -webkit-tap-highlight-color:transparent;
+}
+.button{border-radius:10px!important}
+.ui-button:is(.button-add,.primary,.hero-primary,.auth-submit),.button:is(.button-add,.primary,.hero-primary){
+  --button-fill:#c74305;
+  --button-hover:#ad3500;
+  --button-pressed:#942d00;
+  --button-ink:#fff;
+  --button-line:#c74305;
+  --button-hover-line:#ad3500;
+}
+.ui-button>span,.ui-button>.icon,.button>span,.button>.icon{color:inherit!important}
+.ui-button>.icon,.button>.icon{transform:none!important;animation:none!important;transition:none!important}
+.button.button-add>.icon{display:inline-block!important}
+@media(hover:hover) and (pointer:fine){
+  .ui-button:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]):hover,
+  .button:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]):hover{
+    background-color:var(--button-hover)!important;
+    border-color:var(--button-hover-line)!important;
+    box-shadow:none!important;
+  }
+}
+.ui-button:focus-visible,.button:focus-visible{outline:2px solid var(--button-focus)!important;outline-offset:3px!important}
+.ui-button:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]):active,
+.button:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]):active{
+  background-color:var(--button-pressed)!important;
+  box-shadow:inset 0 2px 4px #00000032!important;
+}
+.ui-button:is(:disabled,[aria-disabled=true],[aria-busy=true]),.button:is(:disabled,[aria-disabled=true],[aria-busy=true]){
+  background:#f0edea!important;
+  border-color:#e2dcd7!important;
+  color:#827973!important;
+  box-shadow:none!important;
+  cursor:not-allowed;
+}
+.ui-button[aria-busy=true],.button[aria-busy=true]{cursor:progress}
+/* A selection group has one moving surface, not two overlapping backgrounds. */
+.segmented.segmented-ready>button,
+.segmented.segmented-ready>button:is(.active,[aria-pressed=true]){
+  background:transparent!important;box-shadow:none!important;border-color:transparent!important;transform:none!important;
+  transition:color var(--button-duration) var(--button-ease)!important;
+}
+.segmented.segmented-ready>button:is(.active,[aria-pressed=true]){color:#fff!important}
+.segmented .selection-pill{background:#272321!important;border:1px solid #272321!important;box-shadow:none!important}
+.segmented>button:focus-visible{outline:2px solid var(--button-focus)!important;outline-offset:2px!important}
+@media(hover:hover) and (pointer:fine){.segmented>button:not(:disabled):hover{color:#9f390f!important}}
+[data-motion=off] .ui-button,[data-motion=off] .button,[data-motion=off] .segmented>button{transition:none!important}
+@media(prefers-reduced-motion:reduce){.ui-button,.button,.segmented>button{transition:none!important}}
+
+/* Cards containing actions stay still; only whole-card links get surface feedback. */
+.stats-grid .stat,.apartment-card,.project-detail-card,.approval-card{
+  transform:none!important;border-color:#ecdfd4!important;box-shadow:var(--surface-shadow)!important;
+  transition:background-color var(--button-duration) var(--button-ease),box-shadow var(--button-duration) var(--button-ease),border-color var(--button-duration) var(--button-ease)!important;
+}
+.stats-grid .stat :is(.stat-icon,.stat-value,.stat-affordance),
+.apartment-card :is(.apartment-art>img,.apartment-card-visual img,.apartment-corner-art){transform:none!important}
+.stats-grid .stat::before{transform:rotate(28deg)!important;transition:none!important}
+.stats-grid .stat::after{transform:none!important;opacity:1!important;transition:none!important}
+.stats-grid .stat .stat-icon{background:#fff9f2!important;box-shadow:none!important}
+.priority-item,.construction-overview .project-row,.client-object,.role-option,.search-result{
+  transform:none!important;transition:background-color var(--button-duration) var(--button-ease),box-shadow var(--button-duration) var(--button-ease)!important;
+}
+@media(hover:hover) and (pointer:fine){
+  .stats-grid .stat.stat-clickable:hover{box-shadow:var(--surface-hover-shadow)!important;border-color:#d6a482!important}
+  .priority-item:hover,.construction-overview .project-row:hover,.client-object:hover,.role-option:hover,.search-result:hover{
+    background:var(--surface-hover)!important;box-shadow:var(--surface-hover-shadow)!important;
+  }
+}
+.stats-grid .stat.stat-clickable:has(.stat-link:focus-visible){outline:2px solid var(--button-focus);outline-offset:3px;box-shadow:var(--surface-hover-shadow)!important}
+:is(.priority-item,.project-row,.client-object,.role-option,.search-result,.matrix-switch button,nav a):focus-visible{outline:2px solid var(--button-focus)!important;outline-offset:3px!important}
+.stats-grid .stat.stat-clickable:has(.stat-link:active){box-shadow:inset 0 1px 4px #70361118!important}
+.matrix-switch button{transform:none!important;transition:background-color var(--button-duration) var(--button-ease),color var(--button-duration) var(--button-ease)}
+.matrix-switch button[aria-pressed=true]{background:#272321!important;color:#fff!important;box-shadow:none}
+@media(hover:none){.priority-item:hover,.construction-overview .project-row:hover,.client-object:hover{background:transparent!important;box-shadow:none!important}}
+[data-motion=off] :is(.stat,.apartment-card,.project-detail-card,.approval-card,.priority-item,.project-row,.client-object,.role-option,.search-result){transition:none!important}
+@media(prefers-reduced-motion:reduce){.stat,.apartment-card,.project-detail-card,.approval-card,.priority-item,.project-row,.client-object,.role-option,.search-result{transition:none!important}}
